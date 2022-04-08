@@ -73,6 +73,7 @@ main {
 
 .form-list input,
 .form-list select {
+    text-align: center;
     height: 25px;
     border: 1px solid #b91450;
     border-radius: 3px;
@@ -122,4 +123,8 @@ main {
 
 .right li h4 {
     margin-bottom: 2rem;
+}
+
+.hidden {
+    display: none;
 }

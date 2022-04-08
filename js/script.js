@@ -47,5 +47,24 @@ formBtn.addEventListener('click',
         document.getElementById('cab').innerHTML = userCab;
         document.getElementById('cp-code').innerHTML = cpCode;
         document.getElementById('ticket-price').innerHTML = priceSimple;
+
+        const ticketSection = document.querySelector('.ticket-section');
+        ticketSection.classList.remove('hidden');
+    }
+)
+
+const formBtnClear = document.getElementById('form-btn-clear');
+console.log(formBtnClear);
+
+formBtnClear.addEventListener('click',
+    function () {
+        const ticketSection = document.querySelector('.ticket-section');
+        ticketSection.classList.add('hidden');
+
+        document.getElementById('user-name').value = '';
+
+        document.getElementById('user-km').value = '';
+
+        document.getElementById('user-age').value = '';
     }
 )
