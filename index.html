@@ -13,34 +13,73 @@
 
     <main>
         <div class="container">
-            <div class="title">
-                <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
-            </div>
-            <div class="form">
-                <ul class="form-list">
-                    <li>
-                        <label for="user-name">Nome e Cognome</label>
-                        <input type="text" name="user-name" id="user-name">
-                    </li>
-                    <li>
-                        <label for="user-km">Km da percorrere</label>
-                        <input type="number" name="user-km" id="user-km">
-                    </li>
-                    <li>
-                        <label for="user-age">Fascia d'età</label>
-                        <select name="user-age" id="user-age">
-                            <option value=""></option>
-                            <option value="under18">Minorenne</option>
-                            <option value="over18-under65">Maggiorenne</option>
-                            <option value="over65">Over 65</option>
-                        </select>
-                    </li>
-                </ul>
-                <div class="btn-container">
-                    <button id="form-btn">Genera</button>
-                    <button id="form-btn-clear">Annulla</button>
+            <section class="form-section">
+                <div class="title">
+                    <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
                 </div>
-            </div>
+                <div class="form">
+                    <ul class="form-list">
+                        <li>
+                            <label for="user-name">Nome e Cognome</label>
+                            <input type="text" name="user-name" id="user-name">
+                        </li>
+                        <li>
+                            <label for="user-km">Km da percorrere</label>
+                            <input type="number" name="user-km" id="user-km">
+                        </li>
+                        <li>
+                            <label for="user-age">Fascia d'età</label>
+                            <select name="user-age" id="user-age">
+                                <option value=""></option>
+                                <option value="under18">Minorenne</option>
+                                <option value="over18-under65">Maggiorenne</option>
+                                <option value="over65">Over 65</option>
+                            </select>
+                        </li>
+                    </ul>
+                    <div class="btn-container">
+                        <button id="form-btn">Genera</button>
+                        <button id="form-btn-clear">Annulla</button>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="ticket-section">
+                <div class="title">
+                    <h2>IL TUO BIGLIETTO</h2>
+                </div>
+                <div class="ticket">
+                    <div class="sub-title">
+                        <h3>DETTAGLIO PASSEGGERI</h3>
+                    </div>
+                    <div class="details clearfix">
+                        <div class="left float-l">
+                            <h3>NOME PASSEGGERO</h3>
+                            <span>Nome Cognome</span>
+                        </div>
+                        <div class="right float-l">
+                            <ul>
+                                <li>
+                                    <h4>Offerta</h4>
+                                    <span>Biglietto</span>
+                                </li>
+                                <li>
+                                    <h4>Carrozza</h4>
+                                    <span>Numero Carrozza</span>
+                                </li>
+                                <li>
+                                    <h4>Codice CP</h4>
+                                    <span>Codice Numerico</span>
+                                </li>
+                                <li>
+                                    <h4>Costo biglietto</h4>
+                                    <span>Costo</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     </main>
     
