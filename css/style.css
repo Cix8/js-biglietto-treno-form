@@ -3,3 +3,76 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+ul {
+    list-style: none;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    background-color: #b91450;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.title {
+    padding: 1.5rem 0;
+    font-size: large;
+    text-align: center;
+    color: white;
+}
+
+.form {
+    background-color: white;
+    border-radius: 20px;
+    padding-bottom: 2rem;
+}
+
+.form-list {
+    display: flex;
+    justify-content: center;
+    color: #b91450;
+}
+
+.form-list li {
+    position: relative;
+    padding: 3rem 0;
+    margin-right: 5rem;
+}
+
+.form-list :last-child {
+    margin-right: 0;
+}
+
+.form-list label {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.form-list input,
+.form-list select {
+    height: 25px;
+    border: 1px solid #b91450;
+    border-radius: 3px;
+}
+
+.btn-container button {
+    padding: .2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #b91450;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#form-btn {
+    margin-right: 1rem;
+}
