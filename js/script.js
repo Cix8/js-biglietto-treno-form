@@ -16,19 +16,36 @@ formBtn.addEventListener('click',
         console.log(priceKm);
 
         let discount;
+        let ticketType;
 
         if (userAge === 'under18') {
             discount = (priceKm * 20) / 100;
+            ticketType = 'Biglietto Minorenni';
         } else if (userAge === 'over65') {
             discount = (priceKm * 40) / 100;
+            ticketType = 'Biglietto Silver';
         } else {
             discount = 0;
+            ticketType = 'Biglietto Standard';
         }
 
         console.log(discount);
 
         const finalPrice = priceKm - discount
         console.log(finalPrice);
-        const priceSimple = finalPrice.toFixed(2)
+        const priceSimple = finalPrice.toFixed(2) + '€'
+
+        // CABINE DA 1 A 7
+        const userCab = Math.floor(Math.random() * 7) + 1;
+        console.log(userCab);
+
+        const cpCode = Math.floor(Math.random() * 10000 ) + 90000;
+        console.log(cpCode);
+
+        document.getElementById('passenger').innerHTML = userName;
+        document.getElementById('ticket-type').innerHTML = ticketType;
+        document.getElementById('cab').innerHTML = userCab;
+        document.getElementById('cp-code').innerHTML = cpCode;
+        document.getElementById('ticket-price').innerHTML = priceSimple;
     }
 )
